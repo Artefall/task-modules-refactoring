@@ -128,3 +128,26 @@ function displayLongNameUser(users) {
 	displayUsers(longNameUsersTable, usersData);
 }
 getUsers(USERS_URL, displayLongNameUser);
+
+
+module.exports = {
+	displayLongNameUser: displayLongNameUser(users),
+	filterLongName: filterLongName(users),
+	sortByName: sortByName(users),
+	displayUsersByName: displayUsersByName(users),
+	format: format(users),
+	User: User(data),
+	displayUsers: displayUsers(tableElement, users),
+	displayAllUsers: displayAllUsers(users),
+	filterActive: filterActive(users),
+	displayActiveUsers: displayActiveUsers(users),
+	displayUsersByAge: displayUsersByAge(users),
+	sortByAge: sortByAge(users),
+	allUsersTable: allUsersTable,
+	activeUsersTable: activeUsersTable,
+	usersByAgeTable: usersByAgeTable,
+	usersByNameTable: usersByNameTable,
+	longNameUsersTable: longNameUsersTable,
+	getUsers: getUsers,
+	USERS_URL: USERS_URL
+}
