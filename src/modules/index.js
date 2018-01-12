@@ -8,15 +8,20 @@ new Body({ // eslint-disable-line no-new
 
 var outFunc = require('./modules/main')
 
-outFunc.displayLongNameUser()
-outFunc.filterLongName()
-outFunc.sortByName()
-outFunc.displayUsersByName()
-outFunc.format()
-outFunc.User()
-outFunc.displayUsers()
-outFunc.displayAllUsers()
-outFunc.filterActive()
-outFunc.displayActiveUsers()
-outFunc.displayUsersByAge()
-outFunc.sortByAge()
+getUsers(USERS_URL, displayAllUsers);
+getUsers(USERS_URL, displayActiveUsers);
+getUsers(USERS_URL, displayUsersByAge);
+getUsers(USERS_URL, displayUsersByName);
+getUsers(USERS_URL, displayLongNameUser);
+// outFunc.displayLongNameUser()
+// outFunc.filterLongName()
+// outFunc.sortByName()
+// outFunc.displayUsersByName()
+// outFunc.format()
+// outFunc.User()
+// outFunc.displayUsers()
+// outFunc.displayAllUsers()
+// outFunc.filterActive()
+// outFunc.displayActiveUsers()
+// outFunc.displayUsersByAge()
+// outFunc.sortByAge()
